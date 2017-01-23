@@ -1,0 +1,6 @@
+cmd: ./tools/build.sh build
+targets:
+  flash:
+    cmd: ./tools/build.sh build flash
+  clean:
+    cmd: ./tools/build.sh clean

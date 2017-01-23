@@ -1,0 +1,9 @@
+if SWD
+device STM32F103CB
+speed 12000
+connect
+loadbin stm32-base.hex, 0x2000000
+h
+r
+g
+exit
