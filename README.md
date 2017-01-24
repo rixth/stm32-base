@@ -12,6 +12,17 @@ The demo app contained within is for the STM32F103CB - it blinks B7. To change t
 
 The binary name is `stm32-base` -- to adjust this, edit `tools/build.sh`, and `CMakeLists.txt`.
 
+## Systick handler
+
+If you are going FreeRTOS-less, you will need this snippet in `main.c` to enable things like `HAL_Delay`.
+
+    uint64_t virtualTimer;
+
+    void SysTick_Handler(void) {
+      HAL_IncTick();
+      virtualTimer++;
+    }
+
 ## Build.sh
 
 The build script has several targets.
