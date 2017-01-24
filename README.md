@@ -4,7 +4,7 @@ This is a skeleton project for a STM32-based firmware. It uses cmake as a build 
 
 Make sure that you also check out the submodules: `git submodule update --init --recursive`. You will also need the STM32Cube software from ST's website.
 
-The demo app contained within is for the STM32F103CB. To change the device targeted, make changes in:
+The demo app contained within is for the STM32F103CB - it blinks B7. To change the device targeted, make changes in:
 
 * `tools/build.sh`
 * `tools/flash.jlink`
