@@ -26,7 +26,8 @@ SET(PROJECT_SOURCES
     freertos/FreeRTOS/Source/queue.c
     freertos/FreeRTOS/Source/list.c
     freertos/FreeRTOS/Source/timers.c
-    src/main.c
+    src/newlib.c
+    src/main.cpp
 )
 
 ADD_EXECUTABLE(${CMAKE_PROJECT_NAME} ${PROJECT_SOURCES} ${CMSIS_SOURCES} ${STM32HAL_SOURCES})
